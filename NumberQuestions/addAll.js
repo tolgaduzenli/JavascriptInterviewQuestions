@@ -10,5 +10,10 @@ function addAll() {
 function addAll_2(...numbers) {
   return numbers.reduce((a, b) => a + b);
 }
+
+function addAll_3() {
+  return Object.values(arguments).reduce((a, b) => a + b);
+}
 console.log(addAll(2, 3, 4, 5));
+console.log(addAll_2(2, 3, 4, 5));
 console.log(addAll_2(2, 3, 4, 5));

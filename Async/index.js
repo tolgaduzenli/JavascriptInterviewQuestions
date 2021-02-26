@@ -1,6 +1,6 @@
 let num = 0;
 async function increment() {
-  num += await 2;
+  num += await 2; //when this line set/defined, num = 0
   console.log(num);
 }
 
